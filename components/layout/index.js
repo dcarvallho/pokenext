@@ -2,11 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import styles from './index.module.css';
+
 const MainContainer = (props) => {
   return (
-    <div>
-      <nav>
-        <div>
+    <div className={styles.container}>
+      <nav className={styles.navbar}>
+        <div className={styles.logo}>
           <Image
             src="/images/pokeball.png"
             width="30"
@@ -24,7 +26,7 @@ const MainContainer = (props) => {
           </li>
         </ul>
       </nav>
-      <main>{props.children}</main>
+      <main className="main-container">{props.children}</main>
       <footer>
         <p>
           <span>PokeNext</span> &copy; 2023
