@@ -1,19 +1,17 @@
-import Head from 'next/head';
-import React from 'react';
+import Head from "next/head";
+import React from "react";
 
-import HomePage from '../components/home/index';
+import HomePage from "../components/home/index";
 
 const Home = () => {
-  return(
+  return (
     <div>
       <Head>
-        <title>
-          HomePage
-        </title>
+        <title>HomePage</title>
       </Head>
       <HomePage />
     </div>
-  )
-}
+  );
+};
 
 export default Home;
