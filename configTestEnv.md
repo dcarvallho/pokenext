@@ -9,15 +9,20 @@
 ```
 module.exports = {
   collectCoverage: true,
-  collectCoverageFrom: [
-    'components/**/*.js'
-  ],
+  collectCoverageFrom: ["components/**/*.js"],
   testEnvironment: "jsdom",
   moduleFileExtensions: ["js", "jsx"],
   moduleNameMapper: {
     "\\.(css|less|scss|sass)$": "identity-obj-proxy",
   },
+  testPathIgnorePatterns: [
+    "/node_modules/",
+    "/dist/",
+    "/examples/",
+    "config.js",
+  ],
 };
+
 
 ```
 > Detalhe: collectCoverageFrom específica o diretório que vai ser feita a cobertura dos testes. Nesse caso, vai ser feito dentro da pasta componentes e de todas suas subpastas qualquer arquivo que tenha a extensão .js

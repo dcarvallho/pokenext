@@ -13,11 +13,40 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
+}
+
+.container li {
+    margin-right: 1.3rem;
+}
+
+.container a {
     text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    border-bottom: 3px solid transparent;
+    transition: .4s;
+}
+
+.container a:hover {
+    border-bottom: 3px solid white;
 }
 
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    height: 153px;
+    margin-top: 2rem;
+    border-top: 3px solid #111;
+}
+
+.footer span {
+    font-weight: bold;
 }

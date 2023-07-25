@@ -13,7 +13,7 @@ describe("<MainContainer />", () => {
   it('should redirect the routes properly trough the links', ()=>{
     render(<MainContainer />)
 
-    expect(screen.getByRole("link", { name: /page/i })).toHaveAttribute("href","/page");
+    expect(screen.getByRole("link", { name: /about/i })).toHaveAttribute("href","/about");
 
     expect(screen.getByRole("link", {name: /home/i})).toHaveAttribute("href", "/")
   })
