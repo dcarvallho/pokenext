@@ -15,19 +15,19 @@ const MainContainer = (props) => {
             height="30"
             alt="Logo Pokenext"
           />
-          <h1>PokeNext</h1>
+          <h1 data-testid="my-title">PokeNext</h1>
         </div>
         <ul>
           <li>
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/page">Page</Link>
+            <Link href="/about">About</Link>
           </li>
         </ul>
       </nav>
       <main className="main-container">{props.children}</main>
-      <footer>
+      <footer className={styles.footer}>
         <p>
           <span>PokeNext</span> &copy; 2023
         </p>
