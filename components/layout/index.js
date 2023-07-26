@@ -15,7 +15,7 @@ const MainContainer = (props) => {
             height="30"
             alt="Logo Pokenext"
           />
-          <h1>PokeNext</h1>
+          <h1 data-testid="my-title">PokeNext</h1>
         </div>
         <ul>
           <li>

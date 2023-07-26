@@ -8,13 +8,19 @@ describe("<MainContainer />", () => {
   it("should render component properly", () => {
     render(<MainContainer />);
 
-    expect(screen.get)
+    expect(screen.getByTestId('my-title')).toBeInTheDocument();
   });
-  it('should redirect the routes properly trough the links', ()=>{
-    render(<MainContainer />)
+  it("should redirect the routes properly trough the links", () => {
+    render(<MainContainer />);
 
-    expect(screen.getByRole("link", { name: /about/i })).toHaveAttribute("href","/about");
+    expect(screen.getByRole("link", { name: /about/i })).toHaveAttribute(
+      "href",
+      "/about"
+    );
 
-    expect(screen.getByRole("link", {name: /home/i})).toHaveAttribute("href", "/")
-  })
+    expect(screen.getByRole("link", { name: /home/i })).toHaveAttribute(
+      "href",
+      "/"
+    );
+  });
 });
