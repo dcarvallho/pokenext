@@ -7,6 +7,8 @@ describe("<HomePageContainer />", () => {
   it("Should render component properly", () => {
     render(<HomePageContainer />);
 
-    expect(screen.getByText("Home Page teste", {exact: false})).toBeInTheDocument();
+    expect(screen.getByText("Poke")).toBeInTheDocument();
+
+    expect(screen.getByText("Next")).toBeInTheDocument();
   });
 });
